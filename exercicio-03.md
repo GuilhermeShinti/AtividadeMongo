@@ -1,6 +1,9 @@
-use Mercado
-db.createCollection("Produtos")
+```
+1- >use Mercado
 
+2- >db.createCollection("Produtos")
+
+```
 
 |Produto             |	Marca      |	     Valor |	Quant. Comp.|    Unid.    |
 |:------------------:|:-----------:|:-----------:|:------------:|:-----------:|
@@ -24,6 +27,7 @@ db.createCollection("Produtos")
 |Smartphone	         |LG	         |1500.00      |	3	          |pçs          |
 |Recheado Baunilha	 |Marilan	     |5.00         |	2	          |pçs          |
 
+```
 
 var json = [
 	{"produto": "Batata Frita 100grs", "marca": "Yoki", "valor": 3.00, "quantidadeComp" : 2, "unid" : "unid"},
@@ -47,4 +51,6 @@ var json = [
 	{"produto": "Recheado Baunilha", "marca": "Marilan", "valor": 5.00, "quantidadeComp" : 2, "unid" : "pçs"}
 ]
 
-db.Produto.insert(json)
+>db.Produto.insert(json)
+
+```
