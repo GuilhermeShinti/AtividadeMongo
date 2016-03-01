@@ -1,3 +1,5 @@
+Crie um banco de com o nome: Mercado. E transfira os valores da planilha para uma collection.
+
 ```
 1- >use Mercado
 
