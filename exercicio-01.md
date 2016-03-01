@@ -4,13 +4,16 @@
 
 
 
+```
+ 1- use Teste 
 
-1- use Teste
-2- db.createCollection("Usuario")
-3- for (var i = 1; i <= 10; i++) {
+ 2- db.createCollection("Usuario")
+ 
+ 3- for (var i = 1; i <= 10; i++) {
    		db.Usuario.insert( { nome : 'novoUsuario'+i } )
 	}
-4- db.Usuario.find()
+ 
+ 4- db.Usuario.find()
 {
   "_id": ObjectId("56d4ea5d7c8a47ffd102f00b"),
   "nome": "Leonardo"
@@ -55,3 +58,5 @@
   "_id": ObjectId("56d4eec87c8a47ffd102f015"),
   "nome": "novoUsuario10"
 }
+
+```
