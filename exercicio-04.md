@@ -116,4 +116,20 @@
 ```
 > db.Produtos.find({"valor":{$gt:2000},"marca":"LG"},{produto:true}).pretty()
 { "_id" : ObjectId("56d62aee8114ac0f9e26f8b4"), "produto" : "TV Plasma" }
+
+-----------
+
+var query = {$and : [{marca:"LG"}, {valor:{$gt: 2000}}]}
+db.Produto.find(query)
+{
+  "_id": ObjectId("56d633745174a59fbe03140e"),
+  "produto": "TV Plasma",
+  "marca": "LG",
+  "valor": 3000,
+  "quantidadeComp": 2,
+  "unid": "pçs"
+}
+Fetched 1 record(s) in 2ms
+
+
 ```
