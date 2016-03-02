@@ -78,4 +78,38 @@
 
 - Mostrar apenas o nome do produto, marca e valor, dos produtos que foram comprados mais de 20 unidades;
 
+```
+> db.Produtos.find({"quantidadeComp":{$gt:20}},{produto:true,marca:true,valor:true}).pretty()
+{
+        "_id" : ObjectId("56d62aee8114ac0f9e26f8af"),
+        "produto" : "Tomate",
+        "marca" : "Hortifruti",
+        "valor" : 8
+}
+{
+        "_id" : ObjectId("56d62aee8114ac0f9e26f8b0"),
+        "produto" : "Bala Yogurt",
+        "marca" : "Dori",
+        "valor" : 0.2
+}
+{
+        "_id" : ObjectId("56d62aee8114ac0f9e26f8b7"),
+        "produto" : "Panelas Inox",
+        "marca" : "Consul",
+        "valor" : 30
+}
+{
+        "_id" : ObjectId("56d62aee8114ac0f9e26f8b8"),
+        "produto" : "Smartphone",
+        "marca" : "Apple",
+        "valor" : 2000
+}
+{
+        "_id" : ObjectId("56d62aee8114ac0f9e26f8b9"),
+        "produto" : "Tablet",
+        "marca" : "Apple",
+        "valor" : 3000
+}
+```
+
 - Mostrar apenas o nome dos produtos da LG que custam mais de R$2.000,00
