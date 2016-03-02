@@ -114,8 +114,6 @@
 
 - Mostrar apenas o nome dos produtos da LG que custam mais de R$2.000,00
 ```
-> db.Produtos.find({"valor":{$gt:2000}},{produto:true})
+> db.Produtos.find({"valor":{$gt:2000},"marca":"LG"},{produto:true}).pretty()
 { "_id" : ObjectId("56d62aee8114ac0f9e26f8b4"), "produto" : "TV Plasma" }
-{ "_id" : ObjectId("56d62aee8114ac0f9e26f8b5"), "produto" : "Geladeira" }
-{ "_id" : ObjectId("56d62aee8114ac0f9e26f8b9"), "produto" : "Tablet" }
 ```
